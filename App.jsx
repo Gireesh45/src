@@ -1,7 +1,14 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { useScrollAnimation } from './hooks/useScrollAnimation'
-
+import logo from './assets/logo.png'
+import slider1 from './assets/slider_1.jpg'
+import slider2 from './assets/slider_2.jpg'
+import slider3 from './assets/slider_3.jpg'
+import slider4 from './assets/slider_4.jpg'
+import aboutImg from './assets/about.jpeg'
+import chairmanImg from './assets/chairman.jpeg'
+import principalImg from './assets/principal.jpeg'
 // Gallery Component with individual image animations
 function GalleryGrid() {
   const [galleryItem1Ref, galleryItem1Visible] = useScrollAnimation({ threshold: 0.2 })
@@ -51,15 +58,6 @@ function GalleryGrid() {
   )
 }
 
-// Import images (adjust paths as needed)
-const logo = '/images/logo.png'
-const slider1 = '/images/slider_1.jpg'
-const slider2 = '/images/slider_2.jpg'
-const slider3 = '/images/slider_3.jpg'
-const slider4 = '/images/slider_4.jpg'
-const aboutImg = '/images/about.jpeg'
-const chairmanImg = '/images/chairman.jpeg'
-const principalImg = '/images/principal.jpeg'
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
