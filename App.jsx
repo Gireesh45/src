@@ -1,14 +1,14 @@
 import { useState, useEffect } from 'react'
 import './App.css'
 import { useScrollAnimation } from './hooks/useScrollAnimation'
-import logo from './assets/logo.png'
-import slider1 from './assets/slider_1.jpg'
-import slider2 from './assets/slider_2.jpg'
-import slider3 from './assets/slider_3.jpg'
-import slider4 from './assets/slider_4.jpg'
-import aboutImg from './assets/about.jpeg'
-import chairmanImg from './assets/chairman.jpeg'
-import principalImg from './assets/principal.jpeg'
+import logo from './assets/images/logo.png'
+import slider1 from './assets/images/slider_1.jpg'
+import slider2 from './assets/images/slider_2.jpg'
+import slider3 from './assets/images/slider_3.jpg'
+import slider4 from './assets/images/slider_4.jpg'
+import aboutImg from './assets/images/about.jpeg'
+import chairmanImg from './assets/images/chairman.jpeg'
+import principalImg from './assets/images/principal.jpeg'
 // Gallery Component with individual image animations
 function GalleryGrid() {
   const [galleryItem1Ref, galleryItem1Visible] = useScrollAnimation({ threshold: 0.2 })
